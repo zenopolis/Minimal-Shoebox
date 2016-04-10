@@ -66,6 +66,7 @@
 		55C2A5C31CBAABBF003E37B5 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		55C2A5C51CBAAD8C003E37B5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		55C2A5C71CBAC79C003E37B5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		55C2A5C81CBAD64C003E37B5 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				55C2A5C71CBAC79C003E37B5 /* README.md */,
+				55C2A5C81CBAD64C003E37B5 /* LICENSE.md */,
 				55C2A5801CBA91FB003E37B5 /* Shoebox */,
 				55C2A5951CBA91FC003E37B5 /* ShoeboxTests */,
 				55C2A5A01CBA91FC003E37B5 /* ShoeboxUITests */,
