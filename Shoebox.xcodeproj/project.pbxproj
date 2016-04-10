@@ -14,6 +14,8 @@
 		55C2A58C1CBA91FB003E37B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C2A58A1CBA91FB003E37B5 /* Main.storyboard */; };
 		55C2A5971CBA91FC003E37B5 /* ShoeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5961CBA91FC003E37B5 /* ShoeboxTests.swift */; };
 		55C2A5A21CBA91FC003E37B5 /* ShoeboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5A11CBA91FC003E37B5 /* ShoeboxUITests.swift */; };
+		55C2A5B41CBA94C5003E37B5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5B31CBA94C5003E37B5 /* CoreDataStack.swift */; settings = {ASSET_TAGS = (); }; };
+		55C2A5B61CBA953B003E37B5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5B51CBA953B003E37B5 /* DataController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		55C2A59D1CBA91FC003E37B5 /* ShoeboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoeboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C2A5A11CBA91FC003E37B5 /* ShoeboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeboxUITests.swift; sourceTree = "<group>"; };
 		55C2A5A31CBA91FC003E37B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C2A5B31CBA94C5003E37B5 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		55C2A5B51CBA953B003E37B5 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				55C2A5811CBA91FB003E37B5 /* AppDelegate.swift */,
+				55C2A5B51CBA953B003E37B5 /* DataController.swift */,
+				55C2A5B31CBA94C5003E37B5 /* CoreDataStack.swift */,
 				55C2A5AF1CBA9216003E37B5 /* Model */,
 				55C2A5B01CBA922A003E37B5 /* View */,
 				55C2A5B11CBA923C003E37B5 /* Controller */,
@@ -286,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C2A5B61CBA953B003E37B5 /* DataController.swift in Sources */,
 				55C2A5841CBA91FB003E37B5 /* ViewController.swift in Sources */,
 				55C2A5821CBA91FB003E37B5 /* AppDelegate.swift in Sources */,
 				55C2A5871CBA91FB003E37B5 /* Shoebox.xcdatamodeld in Sources */,
+				55C2A5B41CBA94C5003E37B5 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
