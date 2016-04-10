@@ -10,6 +10,43 @@ import Cocoa
 
 class DataController: NSObject {
 
+    // MARK: - Properties
+    
+    lazy var library: Library! = {
+        
+        let mom = self.managedObjectModel
+        let request = mom.fetchRequestTemplateForName(Model.FetchRequest.library)
+        
+        var results: [AnyObject]?
+        
+        do {
+            results = try self.managedObjectContext.executeFetchRequest(request!)
+        } catch var error as NSError {
+            print("Error: \(error.localizedDescription)\n\(error.userInfo)")
+            results = nil
+        }
+        
+        if var results = results {
+            if results.count != 0 {
+                if let library = results[0] as? Library {
+                    return library
+                }
+            }
+        }
+        
+        // Nothing in store - Load our default outline view data.
+        return self.freshLibrary()
+        }()
+    
+    // MARK: Helper Methods
+    
+    private func freshLibrary() -> Library! {
+        
+        let moc = self.managedObjectContext
+        let library = NSEntityDescription.insertNewObjectForEntityForName(Model.Entities.library, inManagedObjectContext: moc) as! Library
+        return library
+    }
+    
     // MARK: - Data Saving and Undo support
     
     func save() {
