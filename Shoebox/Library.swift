@@ -12,6 +12,31 @@ import CoreData
 @objc(Library)
 class Library: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
-
+    // MARK: - Methods
+    
+    func addItemWithTitle(title: String) {
+        
+        if let items = items as? NSMutableOrderedSet {
+            
+            let item = NSEntityDescription.insertNewObjectForEntityForName(Model.Entities.item, inManagedObjectContext: self.managedObjectContext!) as! Item
+            
+            item.title = title
+            item.content = ""
+            
+            item.parent = self
+            
+            items.addObject(item)
+        }
+    }
+    
+    // MARK: - Items Accessor Methods
+    
+    func itemForIndex(idx: Int) -> Item! {
+        
+        if let item = items?.objectAtIndex(idx) as? Item {
+            return item
+        }
+        return nil
+    }
+    
 }
