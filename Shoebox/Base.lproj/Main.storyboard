@@ -690,7 +690,7 @@
         <!--Detail-->
         <scene sceneID="4t2-9i-ZRF">
             <objects>
-                <viewController title="Detail" id="iLV-8C-GPZ" sceneMemberID="viewController">
+                <viewController title="Detail" id="iLV-8C-GPZ" customClass="DetailViewController" customModule="Shoebox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="lF4-Wh-9qe">
                         <rect key="frame" x="0.0" y="0.0" width="486" height="405"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -711,6 +711,9 @@
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <size key="minSize" width="484" height="403"/>
                                             <size key="maxSize" width="486" height="10000000"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="iLV-8C-GPZ" id="5Kj-bs-qJO"/>
+                                            </connections>
                                         </textView>
                                     </subviews>
                                     <animations/>
@@ -741,6 +744,9 @@
                         </constraints>
                         <animations/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="k5x-s4-egT" id="WDh-3B-ouq"/>
+                    </connections>
                 </viewController>
                 <customObject id="g67-sC-o0H" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
