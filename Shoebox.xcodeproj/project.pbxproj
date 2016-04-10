@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55C2A5821CBA91FB003E37B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5811CBA91FB003E37B5 /* AppDelegate.swift */; };
+		55C2A5841CBA91FB003E37B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5831CBA91FB003E37B5 /* ViewController.swift */; };
+		55C2A5871CBA91FB003E37B5 /* Shoebox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5851CBA91FB003E37B5 /* Shoebox.xcdatamodeld */; };
+		55C2A5891CBA91FB003E37B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C2A5881CBA91FB003E37B5 /* Assets.xcassets */; };
+		55C2A58C1CBA91FB003E37B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C2A58A1CBA91FB003E37B5 /* Main.storyboard */; };
+		55C2A5971CBA91FC003E37B5 /* ShoeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5961CBA91FC003E37B5 /* ShoeboxTests.swift */; };
+		55C2A5A21CBA91FC003E37B5 /* ShoeboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5A11CBA91FC003E37B5 /* ShoeboxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55C2A5931CBA91FC003E37B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C2A5761CBA91FB003E37B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C2A57D1CBA91FB003E37B5;
+			remoteInfo = Shoebox;
+		};
+		55C2A59E1CBA91FC003E37B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C2A5761CBA91FB003E37B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C2A57D1CBA91FB003E37B5;
+			remoteInfo = Shoebox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55C2A57E1CBA91FB003E37B5 /* Shoebox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoebox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C2A5811CBA91FB003E37B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55C2A5831CBA91FB003E37B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55C2A5861CBA91FB003E37B5 /* Shoebox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shoebox.xcdatamodel; sourceTree = "<group>"; };
+		55C2A5881CBA91FB003E37B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55C2A58B1CBA91FB003E37B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55C2A58D1CBA91FB003E37B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C2A5921CBA91FC003E37B5 /* ShoeboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoeboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C2A5961CBA91FC003E37B5 /* ShoeboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeboxTests.swift; sourceTree = "<group>"; };
+		55C2A5981CBA91FC003E37B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C2A59D1CBA91FC003E37B5 /* ShoeboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoeboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C2A5A11CBA91FC003E37B5 /* ShoeboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeboxUITests.swift; sourceTree = "<group>"; };
+		55C2A5A31CBA91FC003E37B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55C2A57B1CBA91FB003E37B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C2A58F1CBA91FC003E37B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C2A59A1CBA91FC003E37B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55C2A5751CBA91FB003E37B5 = {
+			isa = PBXGroup;
+			children = (
+				55C2A5801CBA91FB003E37B5 /* Shoebox */,
+				55C2A5951CBA91FC003E37B5 /* ShoeboxTests */,
+				55C2A5A01CBA91FC003E37B5 /* ShoeboxUITests */,
+				55C2A57F1CBA91FB003E37B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55C2A57F1CBA91FB003E37B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C2A57E1CBA91FB003E37B5 /* Shoebox.app */,
+				55C2A5921CBA91FC003E37B5 /* ShoeboxTests.xctest */,
+				55C2A59D1CBA91FC003E37B5 /* ShoeboxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C2A5801CBA91FB003E37B5 /* Shoebox */ = {
+			isa = PBXGroup;
+			children = (
+				55C2A5811CBA91FB003E37B5 /* AppDelegate.swift */,
+				55C2A5831CBA91FB003E37B5 /* ViewController.swift */,
+				55C2A5881CBA91FB003E37B5 /* Assets.xcassets */,
+				55C2A58A1CBA91FB003E37B5 /* Main.storyboard */,
+				55C2A58D1CBA91FB003E37B5 /* Info.plist */,
+				55C2A5851CBA91FB003E37B5 /* Shoebox.xcdatamodeld */,
+			);
+			path = Shoebox;
+			sourceTree = "<group>";
+		};
+		55C2A5951CBA91FC003E37B5 /* ShoeboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				55C2A5961CBA91FC003E37B5 /* ShoeboxTests.swift */,
+				55C2A5981CBA91FC003E37B5 /* Info.plist */,
+			);
+			path = ShoeboxTests;
+			sourceTree = "<group>";
+		};
+		55C2A5A01CBA91FC003E37B5 /* ShoeboxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55C2A5A11CBA91FC003E37B5 /* ShoeboxUITests.swift */,
+				55C2A5A31CBA91FC003E37B5 /* Info.plist */,
+			);
+			path = ShoeboxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55C2A57D1CBA91FB003E37B5 /* Shoebox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C2A5A61CBA91FC003E37B5 /* Build configuration list for PBXNativeTarget "Shoebox" */;
+			buildPhases = (
+				55C2A57A1CBA91FB003E37B5 /* Sources */,
+				55C2A57B1CBA91FB003E37B5 /* Frameworks */,
+				55C2A57C1CBA91FB003E37B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shoebox;
+			productName = Shoebox;
+			productReference = 55C2A57E1CBA91FB003E37B5 /* Shoebox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55C2A5911CBA91FC003E37B5 /* ShoeboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C2A5A91CBA91FC003E37B5 /* Build configuration list for PBXNativeTarget "ShoeboxTests" */;
+			buildPhases = (
+				55C2A58E1CBA91FC003E37B5 /* Sources */,
+				55C2A58F1CBA91FC003E37B5 /* Frameworks */,
+				55C2A5901CBA91FC003E37B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55C2A5941CBA91FC003E37B5 /* PBXTargetDependency */,
+			);
+			name = ShoeboxTests;
+			productName = ShoeboxTests;
+			productReference = 55C2A5921CBA91FC003E37B5 /* ShoeboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55C2A59C1CBA91FC003E37B5 /* ShoeboxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C2A5AC1CBA91FC003E37B5 /* Build configuration list for PBXNativeTarget "ShoeboxUITests" */;
+			buildPhases = (
+				55C2A5991CBA91FC003E37B5 /* Sources */,
+				55C2A59A1CBA91FC003E37B5 /* Frameworks */,
+				55C2A59B1CBA91FC003E37B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55C2A59F1CBA91FC003E37B5 /* PBXTargetDependency */,
+			);
+			name = ShoeboxUITests;
+			productName = ShoeboxUITests;
+			productReference = 55C2A59D1CBA91FC003E37B5 /* ShoeboxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55C2A5761CBA91FB003E37B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "David Kennedy of Zenopolis";
+				TargetAttributes = {
+					55C2A57D1CBA91FB003E37B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					55C2A5911CBA91FC003E37B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 55C2A57D1CBA91FB003E37B5;
+					};
+					55C2A59C1CBA91FC003E37B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 55C2A57D1CBA91FB003E37B5;
+					};
+				};
+			};
+			buildConfigurationList = 55C2A5791CBA91FB003E37B5 /* Build configuration list for PBXProject "Shoebox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55C2A5751CBA91FB003E37B5;
+			productRefGroup = 55C2A57F1CBA91FB003E37B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55C2A57D1CBA91FB003E37B5 /* Shoebox */,
+				55C2A5911CBA91FC003E37B5 /* ShoeboxTests */,
+				55C2A59C1CBA91FC003E37B5 /* ShoeboxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55C2A57C1CBA91FB003E37B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C2A5891CBA91FB003E37B5 /* Assets.xcassets in Resources */,
+				55C2A58C1CBA91FB003E37B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C2A5901CBA91FC003E37B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C2A59B1CBA91FC003E37B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55C2A57A1CBA91FB003E37B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C2A5841CBA91FB003E37B5 /* ViewController.swift in Sources */,
+				55C2A5821CBA91FB003E37B5 /* AppDelegate.swift in Sources */,
+				55C2A5871CBA91FB003E37B5 /* Shoebox.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C2A58E1CBA91FC003E37B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C2A5971CBA91FC003E37B5 /* ShoeboxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C2A5991CBA91FC003E37B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C2A5A21CBA91FC003E37B5 /* ShoeboxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55C2A5941CBA91FC003E37B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55C2A57D1CBA91FB003E37B5 /* Shoebox */;
+			targetProxy = 55C2A5931CBA91FC003E37B5 /* PBXContainerItemProxy */;
+		};
+		55C2A59F1CBA91FC003E37B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55C2A57D1CBA91FB003E37B5 /* Shoebox */;
+			targetProxy = 55C2A59E1CBA91FC003E37B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55C2A58A1CBA91FB003E37B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55C2A58B1CBA91FB003E37B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55C2A5A41CBA91FC003E37B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55C2A5A51CBA91FC003E37B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		55C2A5A71CBA91FC003E37B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Shoebox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenopolis.Shoebox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55C2A5A81CBA91FC003E37B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Shoebox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenopolis.Shoebox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55C2A5AA1CBA91FC003E37B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShoeboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenopolis.ShoeboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shoebox.app/Contents/MacOS/Shoebox";
+			};
+			name = Debug;
+		};
+		55C2A5AB1CBA91FC003E37B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShoeboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenopolis.ShoeboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shoebox.app/Contents/MacOS/Shoebox";
+			};
+			name = Release;
+		};
+		55C2A5AD1CBA91FC003E37B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShoeboxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenopolis.ShoeboxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Shoebox;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		55C2A5AE1CBA91FC003E37B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShoeboxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenopolis.ShoeboxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Shoebox;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55C2A5791CBA91FB003E37B5 /* Build configuration list for PBXProject "Shoebox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C2A5A41CBA91FC003E37B5 /* Debug */,
+				55C2A5A51CBA91FC003E37B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C2A5A61CBA91FC003E37B5 /* Build configuration list for PBXNativeTarget "Shoebox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C2A5A71CBA91FC003E37B5 /* Debug */,
+				55C2A5A81CBA91FC003E37B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		55C2A5A91CBA91FC003E37B5 /* Build configuration list for PBXNativeTarget "ShoeboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C2A5AA1CBA91FC003E37B5 /* Debug */,
+				55C2A5AB1CBA91FC003E37B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		55C2A5AC1CBA91FC003E37B5 /* Build configuration list for PBXNativeTarget "ShoeboxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C2A5AD1CBA91FC003E37B5 /* Debug */,
+				55C2A5AE1CBA91FC003E37B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55C2A5851CBA91FB003E37B5 /* Shoebox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55C2A5861CBA91FB003E37B5 /* Shoebox.xcdatamodel */,
+			);
+			currentVersion = 55C2A5861CBA91FB003E37B5 /* Shoebox.xcdatamodel */;
+			path = Shoebox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 55C2A5761CBA91FB003E37B5 /* Project object */;
+}
