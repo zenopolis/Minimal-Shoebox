@@ -16,6 +16,11 @@
 		55C2A5A21CBA91FC003E37B5 /* ShoeboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5A11CBA91FC003E37B5 /* ShoeboxUITests.swift */; };
 		55C2A5B41CBA94C5003E37B5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5B31CBA94C5003E37B5 /* CoreDataStack.swift */; settings = {ASSET_TAGS = (); }; };
 		55C2A5B61CBA953B003E37B5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5B51CBA953B003E37B5 /* DataController.swift */; settings = {ASSET_TAGS = (); }; };
+		55C2A5BB1CBA9DCA003E37B5 /* Library+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5B71CBA9DCA003E37B5 /* Library+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		55C2A5BC1CBA9DCA003E37B5 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5B81CBA9DCA003E37B5 /* Library.swift */; settings = {ASSET_TAGS = (); }; };
+		55C2A5BD1CBA9DCA003E37B5 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5B91CBA9DCA003E37B5 /* Item+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		55C2A5BE1CBA9DCA003E37B5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5BA1CBA9DCA003E37B5 /* Item.swift */; settings = {ASSET_TAGS = (); }; };
+		55C2A5C01CBA9E12003E37B5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5BF1CBA9E12003E37B5 /* Model.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		55C2A5A31CBA91FC003E37B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C2A5B31CBA94C5003E37B5 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		55C2A5B51CBA953B003E37B5 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		55C2A5B71CBA9DCA003E37B5 /* Library+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Library+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		55C2A5B81CBA9DCA003E37B5 /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		55C2A5B91CBA9DCA003E37B5 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		55C2A5BA1CBA9DCA003E37B5 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		55C2A5BF1CBA9E12003E37B5 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +143,9 @@
 		55C2A5AF1CBA9216003E37B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				55C2A5BF1CBA9E12003E37B5 /* Model.swift */,
 				55C2A5851CBA91FB003E37B5 /* Shoebox.xcdatamodeld */,
+				55C2A5C11CBA9E34003E37B5 /* Managed Objects */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -161,6 +173,25 @@
 				55C2A5881CBA91FB003E37B5 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55C2A5C11CBA9E34003E37B5 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				55C2A5B81CBA9DCA003E37B5 /* Library.swift */,
+				55C2A5BA1CBA9DCA003E37B5 /* Item.swift */,
+				55C2A5C21CBA9E49003E37B5 /* Core Data Properties */,
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		55C2A5C21CBA9E49003E37B5 /* Core Data Properties */ = {
+			isa = PBXGroup;
+			children = (
+				55C2A5B71CBA9DCA003E37B5 /* Library+CoreDataProperties.swift */,
+				55C2A5B91CBA9DCA003E37B5 /* Item+CoreDataProperties.swift */,
+			);
+			name = "Core Data Properties";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,9 +324,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C2A5B61CBA953B003E37B5 /* DataController.swift in Sources */,
+				55C2A5BE1CBA9DCA003E37B5 /* Item.swift in Sources */,
+				55C2A5BC1CBA9DCA003E37B5 /* Library.swift in Sources */,
+				55C2A5BD1CBA9DCA003E37B5 /* Item+CoreDataProperties.swift in Sources */,
 				55C2A5841CBA91FB003E37B5 /* ViewController.swift in Sources */,
+				55C2A5C01CBA9E12003E37B5 /* Model.swift in Sources */,
 				55C2A5821CBA91FB003E37B5 /* AppDelegate.swift in Sources */,
 				55C2A5871CBA91FB003E37B5 /* Shoebox.xcdatamodeld in Sources */,
+				55C2A5BB1CBA9DCA003E37B5 /* Library+CoreDataProperties.swift in Sources */,
 				55C2A5B41CBA94C5003E37B5 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +554,7 @@
 				55C2A5A81CBA91FC003E37B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55C2A5A91CBA91FC003E37B5 /* Build configuration list for PBXNativeTarget "ShoeboxTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +563,7 @@
 				55C2A5AB1CBA91FC003E37B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55C2A5AC1CBA91FC003E37B5 /* Build configuration list for PBXNativeTarget "ShoeboxUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +572,7 @@
 				55C2A5AE1CBA91FC003E37B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
