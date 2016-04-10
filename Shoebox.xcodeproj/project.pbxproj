@@ -21,6 +21,7 @@
 		55C2A5BD1CBA9DCA003E37B5 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5B91CBA9DCA003E37B5 /* Item+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		55C2A5BE1CBA9DCA003E37B5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5BA1CBA9DCA003E37B5 /* Item.swift */; settings = {ASSET_TAGS = (); }; };
 		55C2A5C01CBA9E12003E37B5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5BF1CBA9E12003E37B5 /* Model.swift */; settings = {ASSET_TAGS = (); }; };
+		55C2A5C41CBAABBF003E37B5 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5C31CBAABBF003E37B5 /* SplitViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		55C2A5B91CBA9DCA003E37B5 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		55C2A5BA1CBA9DCA003E37B5 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		55C2A5BF1CBA9E12003E37B5 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		55C2A5C31CBAABBF003E37B5 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		55C2A5B11CBA923C003E37B5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				55C2A5C31CBAABBF003E37B5 /* SplitViewController.swift */,
 				55C2A5831CBA91FB003E37B5 /* SourceList.swift */,
 			);
 			name = Controller;
@@ -325,6 +328,7 @@
 			files = (
 				55C2A5B61CBA953B003E37B5 /* DataController.swift in Sources */,
 				55C2A5BE1CBA9DCA003E37B5 /* Item.swift in Sources */,
+				55C2A5C41CBAABBF003E37B5 /* SplitViewController.swift in Sources */,
 				55C2A5BC1CBA9DCA003E37B5 /* Library.swift in Sources */,
 				55C2A5BD1CBA9DCA003E37B5 /* Item+CoreDataProperties.swift in Sources */,
 				55C2A5841CBA91FB003E37B5 /* SourceList.swift in Sources */,

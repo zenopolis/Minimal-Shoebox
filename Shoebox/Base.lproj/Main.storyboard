@@ -668,7 +668,7 @@
         <!--Split View Controller-->
         <scene sceneID="Abt-LS-314">
             <objects>
-                <splitViewController id="hCI-tL-rUw" sceneMemberID="viewController">
+                <splitViewController id="hCI-tL-rUw" customClass="SplitViewController" customModule="Shoebox" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem holdingPriority="255" behavior="contentList" id="3yW-Jd-fEM"/>
                         <splitViewItem id="MIH-dk-eld"/>
@@ -707,10 +707,10 @@
                                             <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="minSize" width="484" height="403"/>
-                                            <size key="maxSize" width="484" height="10000000"/>
+                                            <size key="maxSize" width="486" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <size key="minSize" width="484" height="403"/>
-                                            <size key="maxSize" width="484" height="10000000"/>
+                                            <size key="maxSize" width="486" height="10000000"/>
                                         </textView>
                                     </subviews>
                                     <animations/>
@@ -761,7 +761,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="MM7-tt-z4C">
-                                            <rect key="frame" x="0.0" y="0.0" width="242" height="403"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="242" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                             <size key="intercellSpacing" width="3" height="2"/>
