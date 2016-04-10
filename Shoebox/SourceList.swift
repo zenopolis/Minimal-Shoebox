@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+class SourceList: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
 
     // MARK: - Types
     
