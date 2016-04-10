@@ -16,7 +16,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // MARK: - Lifecycle
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        
+        let mainWindow = NSApplication.sharedApplication().windows.first
+        if let viewController = mainWindow?.contentViewController {
+            viewController.representedObject = dataController
+        }
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {

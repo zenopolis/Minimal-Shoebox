@@ -10,18 +10,23 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
+    // MARK: - Data Controller Access
+    
     override var representedObject: AnyObject? {
         didSet {
-        // Update the view, if already loaded.
+            updateView()
         }
     }
 
-
+    var dataController: DataController! {
+        return representedObject as! DataController
+    }
+    
+    // MARK: Helper Methods
+    
+    func updateView() {
+        // TODO: Implement updateView
+    }
+    
 }
 
