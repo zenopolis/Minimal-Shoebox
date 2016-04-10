@@ -12,6 +12,10 @@ import CoreData
 @objc(Library)
 class Library: NSManagedObject {
 
+    // MARK: - State
+    
+    dynamic var selectedItem: Item! = nil
+    
     // MARK: - Methods
     
     func addItemWithTitle(title: String) {

@@ -30,6 +30,11 @@ struct Model {
             static let items        = "items"
         }
         
+        struct State {
+            
+            static let selectedItem = "selectedItem"
+        }
+        
     }
     
     struct FetchRequest {
