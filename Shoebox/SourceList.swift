@@ -14,12 +14,10 @@ class SourceList: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
     
     struct CellName {
         static let title = "TitleCell"
-        static let content = "ContentCell"
     }
     
     struct ColumnName {
         static let title = "Title"
-        static let content = "Content"
     }
     
     // MARK: - Outlets
@@ -51,16 +49,6 @@ class SourceList: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
         updateView()
     }
     
-    @IBAction func endEditingText(sender: NSTextField) {
-        
-        let row = tableView.rowForView(sender)
-        if (row != -1) {
-            if let item = dataController.library.itemForIndex(row) {
-                item.content = sender.stringValue
-            }
-        }
-    }
-    
     // MARK: Helper Methods
     
     private func dateStamp() -> String {
@@ -87,25 +75,30 @@ class SourceList: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
     
     func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
-        var cellName = CellName.title
-        if (tableColumn?.identifier == ColumnName.content) {
-            cellName = CellName.content
-        }
-        
         let item = dataController.library.items?[row] as! Item
-        
-        let tableCellView = tableView.makeViewWithIdentifier(cellName, owner: self) as! NSTableCellView
-        
-        if (tableColumn?.identifier == ColumnName.title) {
-            
-            tableCellView.textField?.stringValue = item.title!
-            
-        } else if (tableColumn?.identifier == ColumnName.content) {
-            
-            tableCellView.textField?.stringValue = item.content!
-        }
-        
+        let tableCellView = tableView.makeViewWithIdentifier(CellName.title, owner: self) as! NSTableCellView
+        tableCellView.textField?.stringValue = item.title!
         return tableCellView
+    }
+    
+    // MARK: - NSTableView Delegate - Selecting Rows
+    
+    func tableViewSelectionDidChange(notification: NSNotification) {
+        
+        let row = tableView.selectedRow
+        
+        if (row >= 0) { // something selected
+            
+            let selectedItem = dataController.library.itemForIndex(row)
+            
+            if (dataController.library.selectedItem != selectedItem) { // if the actual selected object has changed
+                dataController.library.selectedItem = selectedItem
+            }
+            
+        } else { // nothing selected
+            
+            dataController.library.selectedItem = nil
+        }
     }
 
 }
