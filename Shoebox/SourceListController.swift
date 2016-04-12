@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SourceListController.swift
 //  Shoebox
 //
 //  Created by David Kennedy on 10/04/2016.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class SourceList: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+class SourceListController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
 
     // MARK: - Types
     

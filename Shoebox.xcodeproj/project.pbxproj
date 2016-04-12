@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55C2A5821CBA91FB003E37B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5811CBA91FB003E37B5 /* AppDelegate.swift */; };
-		55C2A5841CBA91FB003E37B5 /* SourceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5831CBA91FB003E37B5 /* SourceList.swift */; };
+		55C2A5841CBA91FB003E37B5 /* SourceListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5831CBA91FB003E37B5 /* SourceListController.swift */; };
 		55C2A5871CBA91FB003E37B5 /* Shoebox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5851CBA91FB003E37B5 /* Shoebox.xcdatamodeld */; };
 		55C2A5891CBA91FB003E37B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C2A5881CBA91FB003E37B5 /* Assets.xcassets */; };
 		55C2A58C1CBA91FB003E37B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C2A58A1CBA91FB003E37B5 /* Main.storyboard */; };
@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		55C2A57E1CBA91FB003E37B5 /* Shoebox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoebox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C2A5811CBA91FB003E37B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55C2A5831CBA91FB003E37B5 /* SourceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceList.swift; sourceTree = "<group>"; };
+		55C2A5831CBA91FB003E37B5 /* SourceListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceListController.swift; sourceTree = "<group>"; };
 		55C2A5861CBA91FB003E37B5 /* Shoebox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shoebox.xcdatamodel; sourceTree = "<group>"; };
 		55C2A5881CBA91FB003E37B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55C2A58B1CBA91FB003E37B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				55C2A5C31CBAABBF003E37B5 /* SplitViewController.swift */,
-				55C2A5831CBA91FB003E37B5 /* SourceList.swift */,
+				55C2A5831CBA91FB003E37B5 /* SourceListController.swift */,
 				55C2A5C51CBAAD8C003E37B5 /* DetailViewController.swift */,
 			);
 			name = Controller;
@@ -339,7 +339,7 @@
 				55C2A5C61CBAAD8C003E37B5 /* DetailViewController.swift in Sources */,
 				55C2A5BC1CBA9DCA003E37B5 /* Library.swift in Sources */,
 				55C2A5BD1CBA9DCA003E37B5 /* Item+CoreDataProperties.swift in Sources */,
-				55C2A5841CBA91FB003E37B5 /* SourceList.swift in Sources */,
+				55C2A5841CBA91FB003E37B5 /* SourceListController.swift in Sources */,
 				55C2A5C01CBA9E12003E37B5 /* Model.swift in Sources */,
 				55C2A5821CBA91FB003E37B5 /* AppDelegate.swift in Sources */,
 				55C2A5871CBA91FB003E37B5 /* Shoebox.xcdatamodeld in Sources */,
