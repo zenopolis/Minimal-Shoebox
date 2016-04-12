@@ -1,4 +1,4 @@
-# Minimum Shoebox
+# Minimal Shoebox
 
 ## What is this?
 
