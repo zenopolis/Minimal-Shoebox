@@ -32,7 +32,7 @@ class DetailViewController: NSViewController {
     
     override var representedObject: AnyObject? {
         didSet {
-            setupObservers()
+            registerAsObserver()
             updateView()
         }
     }
@@ -43,7 +43,7 @@ class DetailViewController: NSViewController {
     
     // MARK: Helper Methods
     
-    func setupObservers() {
+    func registerAsObserver() {
         dataController.library.addObserver(self, forKeyPath: Model.Properties.State.selectedItem, options: .New, context: nil)
     }
     
