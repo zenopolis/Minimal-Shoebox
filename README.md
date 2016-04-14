@@ -2,7 +2,7 @@
 
 ## What is this?
 
-A **Xcode Project** template for an **OS X** *Shoebox* type applications (i.e. applications that use a central library as apposed to seperate documents). 
+A **Xcode Project** template for **OS X** *Shoebox* type applications (i.e. applications that use a central library as apposed to seperate documents). 
 
 The *Minimum Shoebox* template can be used as a starting point for your own shoebox type app, as the start of a new project for experimenting with a specific OS X technology of your choosing, or as a starting point for a tutorial. 
 
