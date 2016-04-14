@@ -21,7 +21,7 @@
 		55C2A5BD1CBA9DCA003E37B5 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5B91CBA9DCA003E37B5 /* Item+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		55C2A5BE1CBA9DCA003E37B5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5BA1CBA9DCA003E37B5 /* Item.swift */; settings = {ASSET_TAGS = (); }; };
 		55C2A5C01CBA9E12003E37B5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5BF1CBA9E12003E37B5 /* Model.swift */; settings = {ASSET_TAGS = (); }; };
-		55C2A5C41CBAABBF003E37B5 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5C31CBAABBF003E37B5 /* SplitViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		55C2A5C41CBAABBF003E37B5 /* DataInjectingSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5C31CBAABBF003E37B5 /* DataInjectingSplitViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		55C2A5C61CBAAD8C003E37B5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2A5C51CBAAD8C003E37B5 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -63,7 +63,7 @@
 		55C2A5B91CBA9DCA003E37B5 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		55C2A5BA1CBA9DCA003E37B5 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		55C2A5BF1CBA9E12003E37B5 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		55C2A5C31CBAABBF003E37B5 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		55C2A5C31CBAABBF003E37B5 /* DataInjectingSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInjectingSplitViewController.swift; sourceTree = "<group>"; };
 		55C2A5C51CBAAD8C003E37B5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		55C2A5C71CBAC79C003E37B5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		55C2A5C81CBAD64C003E37B5 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		55C2A5B11CBA923C003E37B5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				55C2A5C31CBAABBF003E37B5 /* SplitViewController.swift */,
+				55C2A5C31CBAABBF003E37B5 /* DataInjectingSplitViewController.swift */,
 				55C2A5831CBA91FB003E37B5 /* SourceListController.swift */,
 				55C2A5C51CBAAD8C003E37B5 /* DetailViewController.swift */,
 			);
@@ -335,7 +335,7 @@
 			files = (
 				55C2A5B61CBA953B003E37B5 /* DataController.swift in Sources */,
 				55C2A5BE1CBA9DCA003E37B5 /* Item.swift in Sources */,
-				55C2A5C41CBAABBF003E37B5 /* SplitViewController.swift in Sources */,
+				55C2A5C41CBAABBF003E37B5 /* DataInjectingSplitViewController.swift in Sources */,
 				55C2A5C61CBAAD8C003E37B5 /* DetailViewController.swift in Sources */,
 				55C2A5BC1CBA9DCA003E37B5 /* Library.swift in Sources */,
 				55C2A5BD1CBA9DCA003E37B5 /* Item+CoreDataProperties.swift in Sources */,

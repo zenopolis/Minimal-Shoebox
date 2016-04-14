@@ -665,10 +665,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Data Injecting Split View Controller-->
         <scene sceneID="Abt-LS-314">
             <objects>
-                <splitViewController id="hCI-tL-rUw" customClass="SplitViewController" customModule="Shoebox" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="hCI-tL-rUw" customClass="DataInjectingSplitViewController" customModule="Shoebox" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem holdingPriority="255" behavior="contentList" id="3yW-Jd-fEM"/>
                         <splitViewItem id="MIH-dk-eld"/>

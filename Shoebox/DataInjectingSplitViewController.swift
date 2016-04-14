@@ -1,5 +1,5 @@
 //
-//  SplitViewController.swift
+//  DataInjectingSplitViewController.swift
 //  Shoebox
 //
 //  Created by David Kennedy on 10/04/2016.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class SplitViewController: NSSplitViewController {
+class DataInjectingSplitViewController: NSSplitViewController {
 
     // MARK: - Data Controller Access
     
