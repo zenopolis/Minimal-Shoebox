@@ -12,6 +12,15 @@ import CoreData
 @objc(Item)
 class Item: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    // MARK: - Property Names
+    
+    struct Attribute {
+        static let content = "content"
+        static let title = "title"
+    }
+    
+    struct Relationship {
+        static let parent = "parent"
+    }
 
 }

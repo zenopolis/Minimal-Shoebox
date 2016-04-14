@@ -12,7 +12,17 @@ import CoreData
 @objc(Library)
 class Library: NSManagedObject {
 
-    // MARK: - State
+    // MARK: - Property Names
+    
+    struct Relationship {
+        static let items = "items"
+    }
+    
+    // MARK: - Observable State
+    
+    struct ObservableProperty {
+        static let selectedItem = "selectedItem"
+    }
     
     dynamic var selectedItem: Item! = nil
     
@@ -22,7 +32,7 @@ class Library: NSManagedObject {
         
         if let items = items as? NSMutableOrderedSet {
             
-            let item = NSEntityDescription.insertNewObjectForEntityForName(Model.Entities.item, inManagedObjectContext: self.managedObjectContext!) as! Item
+            let item = NSEntityDescription.insertNewObjectForEntityForName(Model.Entity.item, inManagedObjectContext: self.managedObjectContext!) as! Item
             
             item.title = title
             item.content = ""

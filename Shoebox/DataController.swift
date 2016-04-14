@@ -43,7 +43,7 @@ class DataController: NSObject {
     private func freshLibrary() -> Library! {
         
         let moc = self.managedObjectContext
-        let library = NSEntityDescription.insertNewObjectForEntityForName(Model.Entities.library, inManagedObjectContext: moc) as! Library
+        let library = NSEntityDescription.insertNewObjectForEntityForName(Model.Entity.library, inManagedObjectContext: moc) as! Library
         return library
     }
     

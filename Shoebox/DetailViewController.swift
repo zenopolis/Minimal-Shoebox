@@ -24,7 +24,7 @@ class DetailViewController: NSViewController {
     
     deinit {
         if let library = dataController.library {
-            library.removeObserver(self, forKeyPath: Model.Properties.State.selectedItem)
+            library.removeObserver(self, forKeyPath: Library.ObservableProperty.selectedItem)
         }
     }
     
@@ -44,7 +44,7 @@ class DetailViewController: NSViewController {
     // MARK: Helper Methods
     
     func registerAsObserver() {
-        dataController.library.addObserver(self, forKeyPath: Model.Properties.State.selectedItem, options: .New, context: nil)
+        dataController.library.addObserver(self, forKeyPath: Library.ObservableProperty.selectedItem, options: .New, context: nil)
     }
     
     func updateView() {
@@ -81,7 +81,7 @@ class DetailViewController: NSViewController {
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         
-        if (keyPath == Model.Properties.State.selectedItem) {
+        if (keyPath == Library.ObservableProperty.selectedItem) {
             updateView()
         } else {
             super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)

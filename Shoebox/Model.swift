@@ -6,42 +6,20 @@
 //  Copyright © 2016 David Kennedy of Zenopolis. All rights reserved.
 //
 
-// MARK: Types
+// MARK: Modal Constants
 
 struct Model {
     
-    struct Entities {
+    struct Entity {
         
         static let item             = "Item"
         static let library          = "Library"
     }
     
-    struct Properties {
-        
-        struct Attributes {
-            
-            static let content      = "content"
-            static let title        = "title"
-        }
-        
-        struct Relationships {
-            
-            static let parent       = "parent"
-            static let items        = "items"
-        }
-        
-        struct State {
-            
-            static let selectedItem = "selectedItem"
-        }
-        
-    }
-    
     struct FetchRequest {
-        
         static let library          = "Library"
     }
-    
+
     struct Serialization {
         
         static let entityName       = "entityName"
